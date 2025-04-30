@@ -22,3 +22,26 @@ function plusMinus(arr) {
 }
 
 hackrank exercises 01 week preparation
+
+function miniMaxSum(arr) {
+    let max = 0
+    let min = 0
+    let sum = 0
+    
+    for(let x = 0; x < arr.length; x++){
+        console.log(arr[x] < sum ? arr[x] < sum : arr[x])
+        console.log(arr[x] > sum ? arr[x] > sum : arr[x])
+
+        sum += arr[x]
+        if(x < 4){
+            min += arr[x]
+        }
+
+        if(x > 0){
+            max += arr[x]
+        }
+    }
+    console.log(`${min} ${max}`)
+
+}
+miniMaxSum([7,69, 2,221,8974])
